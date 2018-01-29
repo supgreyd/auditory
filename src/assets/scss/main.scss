@@ -1,0 +1,43 @@
+@import "variables";
+@import "../../../static/scss/normalize";
+@import "../../../static/scss/grid";
+body{
+  background-color: $bg-color;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 1.875rem;
+}
+.blockHeight{
+  position: relative;
+  min-height: calc(100vh - 167px);
+  height: 645px;
+  margin-bottom: 55px;
+  padding: 0 15px;
+}
+.bg-white{
+  background-color: #fff;
+}
+.pl_1{
+  padding-left: 1px;
+}
+.pr_1{
+  padding-right: 1px;
+},
+.hide{
+  display: none;
+}
+
+@media(max-width: 767px) {
+  .blockHeight{
+    height: unset;
+    min-height: unset;
+  }
+  .pl_1{
+    padding-left: 15px;
+  }
+  .pr_1{
+    padding-right: 15px;
+  }
+}
+
